@@ -1,0 +1,36 @@
+[
+  {
+    "id": "limit-offer",
+    "enabled": true,
+    "all": [
+      {
+        "field": "ResultCode",
+        "op": "eq",
+        "value": "LIMIT_DECLINED"
+      },
+      {
+        "field": "AmountMinor",
+        "op": "gt",
+        "value": 10000
+      }
+    ],
+    "message": "Limitiniz yetersiz kaldi. Limit artirimi icin basvurabilirsiniz."
+  },
+  {
+    "id": "high-amount-approved",
+    "enabled": false,
+    "all": [
+      {
+        "field": "ResultCode",
+        "op": "eq",
+        "value": "APPROVED"
+      },
+      {
+        "field": "AmountMinor",
+        "op": "gt",
+        "value": 50000
+      }
+    ],
+    "message": "Yüksek tutarli isleminiz onaylandi."
+  }
+]

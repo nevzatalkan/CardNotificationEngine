@@ -1,0 +1,21 @@
+# Build results
+bin/
+obj/
+*.dll
+*.exe
+*.pdb
+
+# Database files
+*.db
+*.db-shm
+*.db-wal
+
+# IDE
+.vs/
+.vscode/
+*.user
+*.suo
+
+# Other
+.DS_Store
+*.log
